@@ -15,8 +15,8 @@ while True:
     address = input('Enter location:')
     if len(address) < 1: break #to avoid empty input
 
-    parms = dict()
-    parms['address'] = address
+    params = dict()
+    params['address'] = address
     if api_key is not False: parms['key'] = api_key
     url = serviceurl + urllib.parse.urlencode(parms)
     #this concatenates the service url with the address. Address needs to get encoded for blank spaces etc.
