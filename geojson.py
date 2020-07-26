@@ -17,8 +17,8 @@ while True:
 
     params = dict()
     params['address'] = address
-    if api_key is not False: parms['key'] = api_key
-    url = serviceurl + urllib.parse.urlencode(parms)
+    if api_key is not False: params['key'] = api_key
+    url = serviceurl + urllib.parse.urlencode(params)
     #this concatenates the service url with the address. Address needs to get encoded for blank spaces etc.
     #end product will look something like .../json?address=Silver+Street...
 
